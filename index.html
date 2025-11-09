@@ -12,24 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'display': ['Lato', 'sans-serif']
-                    },
-                    colors: {
-                        'brand-gray-dark': '#111111', // Negro/Gris muy oscuro para footer
-                        'brand-gray': '#222222',     // Gris oscuro para fondos de sección
-                        'brand-gray-light': '#F5F5F5', // Gris muy claro para fondo general
-                        'brand-white': '#FFFFFF',
-                    }
-                }
-            }
-        }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Lato', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-gray-dark': '#111111', 
+                        'brand-gray': '#222222',     
+                        'brand-gray-light': '#F5F5F5',
+                        'brand-white': '#FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
 
-    src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </script>
 </head>
 <body class="bg-brand-gray-light font-sans text-brand-gray-dark">
