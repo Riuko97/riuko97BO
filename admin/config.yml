@@ -13,7 +13,7 @@ collections:
       # --- Configuración para la página de Menús ---
       - name: "menus"
         label: "Página de Menús"
-        file: "_data/menus.json" 
+        file: "data/menus.json" 
         description: "Edita el contenido de la página de menús"
         fields: 
           - { label: "Menú Diario", name: "diario", widget: "object", fields: [
