@@ -21,11 +21,10 @@
                     },
                     colors: {
                         'brand-gray-dark': '#111111', 
-                        'brand-gray': '#222222',     
+                        'brand-gray': '#222222',      
                         'brand-gray-light': '#F5F5F5',
                         'brand-white': '#FFFFFF',
                     },
-                    // Añadimos 'break-inside' para la maquetación de columnas
                     breakInside: {
                         'avoid': 'avoid',
                     },
@@ -83,58 +82,61 @@
                 </p>
             </div>
             
-            <div class="mt-16 columns-1 md:columns-2 gap-8">
+            <div class="mt-16 max-w-3xl mx-auto">
                 
-                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8">
                     <div class="p-6 sm:p-8 flex-grow">
                         <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Tapas / Tapes</h2>
-                        <table class="w-full text-left">
-                            <tbody>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Patatas bravas / Patates braves.</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Morros / Morros</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Orejas / Orelles</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Lacón gallega / Lacón gallega</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Pinchos / Pinxos</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Chocos / Chocos</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Calamares andaluza / Calamars andalusa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Pata de rejos / Pota de Rejost</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Pescaditos frito / Peixets fregi</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Gambas salada / Gambes salades</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.00€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Gambas a la plancha / Gambes a la planxa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">16.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Pulpo gallega / Pop gallega.</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">16.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Boquerones en vinagre / Seitons en vinagre...</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Sepia a la plancha / Sèpia a la planxa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Mejillones al vapor / Musclos al vapor.....</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Anchoa / Anxova</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Berberechos / Escopinyes.</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.00€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Croquetas / Croquetes..</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Nuggets de pollo / Nuggets de pollastre</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Chistorra / xistorres</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Alitas de pollo / Aletes de pollastre (6u).</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Callos / Tripes</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.90€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Carne en salsa / carn amb salsa...</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.90€</td></tr>
-                                <tr><td class="py-3 pr-3 text-base text-gray-700">Tortilla de patata / Truita de patata</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.50€</td></tr>
-                            </tbody>
-                        </table>
+                        
+                        <ul class="w-full text-left space-y-3">
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Patatas bravas / Patates braves.</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">4.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Morros / Morros</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">5.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Orejas / Orelles</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">6.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Lacón gallega / Lacón gallega</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">5.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Pinchos / Pinxos</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Chocos / Chocos</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Calamares andaluza / Calamars andalusa</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Pata de rejos / Pota de Rejost</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Pescaditos frito / Peixets fregi</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Gambas salada / Gambes salades</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">8.00€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Gambas a la plancha / Gambes a la planxa</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">16.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Pulpo gallega / Pop gallega.</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">16.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Boquerones en vinagre / Seitons en vinagre...</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">6.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Sepia a la plancha / Sèpia a la planxa</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">9.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Mejillones al vapor / Musclos al vapor.....</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">8.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Anchoa / Anxova</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Berberechos / Escopinyes.</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">6.00€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Croquetas / Croquetes..</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">5.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Nuggets de pollo / Nuggets de pollastre</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">5.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Chistorra / xistorres</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">5.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Alitas de pollo / Aletes de pollastre (6u).</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">5.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Callos / Tripes</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.90€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Carne en salsa / carn amb salsa...</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">7.90€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Tortilla de patata / Truita de patata</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">6.50€</span></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8">
                     <div class="p-6 sm:p-8 flex-grow">
                         <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Pizarras / Pissarres</h2>
-                        <table class="w-full text-left">
-                            <tbody>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón Ibérico / Pernil Ibéric</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">13.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón serrano / Pernil Serrá</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
-                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Queso Manchego / Formatge Manxec</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">10.50€</td></tr>
-                                <tr><td class="py-3 pr-3 text-base text-gray-700">Queso Semicurado / Formatge Semicurat</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
-                            </tbody>
-                        </table>
+                        
+                        <ul class="w-full text-left space-y-3">
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Jamón Ibérico / Pernil Ibéric</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">13.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Jamón serrano / Pernil Serrá</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">8.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Queso Manchego / Formatge Manxec</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">10.50€</span></li>
+                            <li class="flex justify-between items-baseline"><span class="text-base text-gray-700 pr-2">Queso Semicurado / Formatge Semicurat</span><span class="flex-grow border-b border-dotted border-gray-400 mx-2"></span><span class="text-base font-semibold text-brand-gray-dark pl-2 whitespace-nowrap">8.50€</span></li>
+                        </ul>
                     </div>
-                </div>
+                </div><div class="mt-8 text-center">
+                <p class="inline-block text-base font-medium text-red-700 bg-red-100 border border-red-300 rounded-lg shadow-sm p-4">
+                    Si usted es alérgico a algún alimento, por favor, avise al camarero. Gracias.
+                </p>
+            </div>
 
             </div>
-        </div>
+            
+            </div>
     </main>
 
     <footer class="bg-brand-gray-dark">
@@ -171,19 +173,6 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="md:col-span-2 lg:col-span-1 w-full h-48 md:h-full rounded-lg overflow-hidden shadow-2xl">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Avinguda%20del%20Doctor%20Gallart%20i%20Mon%C3%A9s%2C%2012%2C%2008820%20El%20Prat%20de%20Llobregat%2C%20Barcelona&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Ubicación de La Broqueta d'Or en Google Maps">
-                    </iframe>
-                </div>
             </div>
 
             <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
@@ -208,19 +197,19 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             
-            // --- Lógica del Menú Móvil ---\r\n            const menuToggle = document.getElementById('menu-toggle');
+            // --- Lógica del Menú Móvil ---
+            const menuToggle = document.getElementById('menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
             const icons = menuToggle.querySelectorAll('svg');
 
             menuToggle.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
                 icons[0].classList.toggle('hidden'); // Icono Hamburguesa
-                icons[0].classList.toggle('block');
                 icons[1].classList.toggle('hidden'); // Icono X
-                icons[1].classList.toggle('block');
             });
 
-            // --- Lógica del Banner de Cookies ---\r\n            const cookieBanner = document.getElementById('cookie-banner');
+            // --- Lógica del Banner de Cookies ---
+            const cookieBanner = document.getElementById('cookie-banner');
             const acceptCookieBtn = document.getElementById('accept-cookie');
 
             if (localStorage.getItem('cookie_accepted') !== 'true') {
