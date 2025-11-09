@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Carta - LA BROQUETA D'OR</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Lato', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-gray-dark': '#111111', 
+                        'brand-gray': '#222222',     
+                        'brand-gray-light': '#F5F5F5',
+                        'brand-white': '#FFFFFF',
+                    },
+                    // Añadimos 'break-inside' para la maquetación de columnas
+                    breakInside: {
+                        'avoid': 'avoid',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray-light font-sans text-brand-gray-dark">
+
+    <header class="bg-brand-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="Index.html" class="flex-shrink-0 flex items-center gap-2">
+                    <span class="font-display text-2xl font-bold tracking-wider">LA BROQUETA D'OR</span>
+                </a>
+
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="Index.html" class="font-display text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent px-1 pt-1 text-sm font-semibold">INICIO</a>
+                    <a href="carta.html" class="font-display text-gray-900 border-b-2 border-brand-gray-dark px-1 pt-1 text-sm font-semibold">CARTA</a>
+                    <a href="menus.html" class="font-display text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent px-1 pt-1 text-sm font-semibold">MENÚS</a>
+                    <a href="tapas.html" class="font-display text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent px-1 pt-1 text-sm font-semibold">TAPAS</a>
+                    <a href="Index.html#contacto" class="font-display text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent px-1 pt-1 text-sm font-semibold">CONTACTO</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-gray-dark" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="Index.html" class="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">INICIO</a>
+                <a href="carta.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">CARTA</a>
+                <a href="menus.html" class="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">MENÚS</a>
+                <a href="tapas.html" class="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">TAPAS</a>
+                <a href="Index.html#contacto" class="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">CONTACTO</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16 sm:py-24 bg-brand-gray-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="font-display text-4xl sm:text-5xl font-bold uppercase tracking-wider text-brand-gray-dark">
+                    Nuestra Carta
+                </h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                    Platos elaborados con el mejor producto de proximidad.
+                </p>
+            </div>
+            
+            <div class="mt-16 columns-1 md:columns-2 lg:columns-3 gap-8">
+                
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Entrantes / Entrants</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Ensalada de la casa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Escalivada con atún y anchoas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Espárragos trigueros al romesco</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Ensaladilla rusa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.00€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">Espárragos blanco con jamón</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Torradas / Torrades</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón Ibérico</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">13.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Chorizo</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón serrano</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Queso oveja</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Fuet</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Lomo con Queso Pimiento</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Serranito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón Serrano y Queso</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.90€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón ibérico y Queso</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">11.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Atún</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Tortilla</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Escalivada con atún y anchoas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">12.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Beicon queso</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">Atún y anchoas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">10.50€</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Sartenes / Paelles</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón ibérico, huevo frito, patatas fritas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">12.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón serrano, pimiento, huevo frito, patatas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">10.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Escalopa, huevo frito, patatas fritas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Pinchos, huevo frito, patatas fritas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Frankfurt, huevo frito, patatas fritas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Chistorras, huevo frito, patatas fritas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">Bacon, huevo frito, patatas fritas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Platos Combinados</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Nº1 Bistec, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°2 Lomo, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°3 Butifarra, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°4 Salchichas, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°5 Pechuga de pollo, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°6 Hamburguesa, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°7 Pincho, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°8 Escalopa de pollo, patatas, huevo frito</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°9 Dorada, patatas, ensalada</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">10.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°10 Sepia, patatas, ensalada</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">11.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°11 Chocos, patatas, ensalada</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">10.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°12 Conejo, patatas, ensalada</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">9.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">N°13 Calamares, patatas, ensalada</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">10.50€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">N°14 Frankfurt, patatas, ensalada</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">8.50€</td></tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3 class="text-2xl font-display font-bold text-brand-gray mt-6 mb-4">Suplementos (Platos)</h3>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">PIMIENTO VERDE</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">1.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">CROQUETAS 4U</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">3.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">ESCALIVADA</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">3.00€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">HUEVO FRITO</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">1.00€</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Bocadillos Calientes</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Lomo</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Bacon</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Pincho</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Salchichas país</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Chistorra</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Frankfurt</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.20€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Tortilla francesa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">3.80€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Calamares</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Bikini</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">3.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Hamburguesa completa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Hamburguesa de la casa</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Tortilla Patata</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Pechuga de pollo</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Panceta</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Lacón</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Sobrasada</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.50€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">Escalopa de pollo</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Bocadillos Fríos</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón serrano</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón ibérico</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">7.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Jamón dulce</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">3.80€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Fuet</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">3.80€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Chorizo</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Atún</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.20€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Anchoas</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">6.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Queso manchego</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">5.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">Queso Semicurado</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">4.80€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">Vegetal</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">3.80€</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Suplementos (Bocadillos)</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">QUESO</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">0.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">QUESO SEMI</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">1.00€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">QUESO MANCHEGO</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">1.50€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">BEICON</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">1.20€</td></tr>
+                                <tr class="border-b border-gray-100"><td class="py-3 pr-3 text-base text-gray-700">CEBOLLA</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">0.80€</td></tr>
+                                <tr><td class="py-3 pr-3 text-base text-gray-700">PIMIENTO</td><td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right">1.00€</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-brand-white rounded-lg shadow-lg overflow-hidden flex flex-col mb-8 break-inside-avoid">
+                    <div class="p-6 sm:p-8 flex-grow">
+                        <h2 class="text-3xl font-display font-bold text-brand-gray mb-6">Bocadillos Especiales</h2>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">SUPER LOMO <span class="block text-sm text-gray-500">(lomo, lechuga, cebolla, queso)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">6.50€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">FELIX <span class="block text-sm text-gray-500">(salchicha, pimiento)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">6.30€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">MALLORQUINI <span class="block text-sm text-gray-500">(jamón dulce, queso, sobrasada)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">5.80€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">VIENA <span class="block text-sm text-gray-500">(frankfurt, beicon, queso)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">5.90€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">RAGAZZI <span class="block text-sm text-gray-500">(lomo, beicon, queso)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">6.50€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">TONET <span class="block text-sm text-gray-500">(tortilla francesa, beicon, queso)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">5.70€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">MARIACHI <span class="block text-sm text-gray-500">(pinchos, alioli)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">6.00€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">PEPITO <span class="block text-sm text-gray-500">(ternera, cebolla, pimiento)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">6.90€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">VEGETAL POLLO <span class="block text-sm text-gray-500">(pollo, lechuga, tomate, mayonesa)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">6.20€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">VEGETAL ATÚN <span class="block text-sm text-gray-500">(atún, lechuga, tomate, mayonesa)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">5.80€</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 pr-3 text-base text-gray-700">SERRANITO <span class="block text-sm text-gray-500">(lomo, jamón país, pimiento)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">6.50€</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 pr-3 text-base text-gray-700">VEGETAL JAMÓN <span class="block text-sm text-gray-500">(jamón dulce, lechuga, tomate, queso, mayonesa)</span></td>
+                                    <td class="py-3 pl-3 text-base font-semibold text-brand-gray-dark text-right align-top">5.50€</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 p-6 bg-brand-white border-l-4 border-brand-gray-dark rounded-lg shadow-lg flex items-center space-x-4">
+                <svg class="w-12 h-12 text-brand-gray-dark flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                </svg>
+                <div>
+                    <h3 class="text-xl font-display font-bold text-brand-gray-dark">Información sobre Alérgenos</h3>
+                    <p class="text-brand-gray-dark text-base mt-1">
+                        Si ud. es alérgico a algún alimento avise al camarero. Gracias.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-brand-gray-dark">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+             <span class="font-display text-2xl font-bold tracking-wider text-white">LA BROQUETA D'OR</span>
+             <p class="text-sm text-gray-400 mt-4">
+                Avinguda del Doctor Gallart i Monés, 12, 08820, El Prat de Llobregat
+             </p>
+            <p class="text-sm text-gray-400">
+                Tlf: 934 79 64 42
+            </p>
+            <p class="text-base text-gray-500 mt-8">
+                © 2024 LA BROQUETA D'OR. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+
+    <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 bg-brand-gray-dark text-white p-4 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto sm:flex sm:items-center sm:justify-between">
+            <p class="text-sm text-gray-300">
+                Este sitio web utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.
+            </p>
+            <button id="accept-cookie" class="mt-3 sm:mt-0 sm:ml-4 flex-shrink-0 w-full sm:w-auto inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium bg-brand-white text-brand-gray-dark hover:bg-brand-gray-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-white">
+                ACEPTAR
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Lógica del Menú Móvil ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const icons = menuToggle.querySelectorAll('svg');
+
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                icons[0].classList.toggle('hidden');
+                icons[0].classList.toggle('block');
+                icons[1].classList.toggle('hidden');
+                icons[1].classList.toggle('block');
+            });
+
+            // --- Lógica del Banner de Cookies ---
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptCookieBtn = document.getElementById('accept-cookie');
+
+            if (localStorage.getItem('cookie_accepted') !== 'true') {
+                cookieBanner.classList.remove('hidden');
+            }
+
+            acceptCookieBtn.addEventListener('click', () => {
+                cookieBanner.style.display = 'none';
+                localStorage.setItem('cookie_accepted', 'true');
+            });
+        });
+    </script>
+
+</body>
+</html>
