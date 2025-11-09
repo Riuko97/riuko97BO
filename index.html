@@ -234,40 +234,40 @@
         </div>
     </div>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        
-        // --- Lógica del Menú Móvil (Corregida) ---
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const icons = menuToggle.querySelectorAll('svg');
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Lógica del Menú Móvil (Corregida) ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const icons = menuToggle.querySelectorAll('svg');
 
-        // Esta es la lógica correcta (la de tus otros archivos)
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            icons[0].classList.toggle('hidden'); // Icono Hamburguesa
-            icons[1].classList.toggle('hidden'); // Icono X
-        });
-    
-        // --- Lógica del Banner de Cookies (Movida aquí dentro) ---
-        const cookieBanner = document.getElementById('cookie-banner');
-        const acceptCookieBtn = document.getElementById('accept-cookie');
+            // Esta es la lógica correcta (la de tus otros archivos)
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                icons[0].classList.toggle('hidden'); // Icono Hamburguesa
+                icons[1].classList.toggle('hidden'); // Icono X
+            });
+        
+            // --- Lógica del Banner de Cookies (Movida aquí dentro) ---
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptCookieBtn = document.getElementById('accept-cookie');
 
-        if (localStorage.getItem('cookie_accepted') !== 'true') {
-            cookieBanner.classList.remove('hidden');
-        }
+            if (localStorage.getItem('cookie_accepted') !== 'true') {
+                cookieBanner.classList.remove('hidden');
+            }
 
-        acceptCookieBtn.addEventListener('click', () => {
-            cookieBanner.style.display = 'none';
-            localStorage.setItem('cookie_accepted', 'true');
-        });
+            acceptCookieBtn.addEventListener('click', () => {
+                cookieBanner.style.display = 'none';
+                localStorage.setItem('cookie_accepted', 'true');
+            });
 
-        // --- Lógica de la invitación (Movida aquí dentro) ---
-        if (window.location.hash.includes("invite_token")) {
-            netlifyIdentity.open('signup');
-        }
+            // --- Lógica de la invitación (Movida aquí dentro) ---
+            if (window.location.hash.includes("invite_token")) {
+                netlifyIdentity.open('signup');
+            }
 
-    });
-</script>
+        });
+    </script>
 
 </body>
   <footer class="bg-brand-gray-dark">
