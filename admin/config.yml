@@ -1,0 +1,38 @@
+# Backend (Cómo se conecta a tu código)
+backend:
+  name: git-gateway
+  branch: main # IMPORTANTE: Cambia 'main' por 'master' si esa es tu rama principal
+
+# Dónde guardar las imágenes que el cliente suba
+media_folder: "assets/uploads" # Te recomiendo crear la carpeta 'assets/uploads'
+public_folder: "/assets/uploads"
+
+# Colecciones: El contenido editable
+collections:
+  - name: "paginas"
+    label: "Páginas"
+    files:
+      # --- Configuración para la página de Menús ---
+      - name: "menus"
+        label: "Página de Menús"
+        file: "_data/menus.json" # Apunta al archivo JSON que creamos
+        description: "Edita el contenido de la página de menús"
+        fields: # Los campos del formulario
+          - { label: "Menú Diario", name: "diario", widget: "object", fields: [
+              { label: "Título", name: "titulo", widget: "string" },
+              { label: "Disponibilidad", name: "disponibilidad", widget: "string" },
+              { label: "Precio", name: "precio", widget: "string" },
+              { label: "Items (lista)", name: "items", widget: "list" }
+            ]}
+          - { label: "Menú Fin de Semana", name: "finde", widget: "object", fields: [
+              { label: "Título", name: "titulo", widget: "string" },
+              { label: "Disponibilidad", name: "disponibilidad", widget: "string" },
+              { label: "Precio", name: "precio", widget: "string" },
+              { label: "Items (lista)", name: "items", widget: "list" }
+            ]}
+          - { label: "Menús de Grupo", name: "grupos", widget: "object", fields: [
+              { label: "Título", name: "titulo", widget: "string" },
+              { label: "Disponibilidad", name: "disponibilidad", widget: "string" },
+              { label: "Precio", name: "precio", widget: "string" },
+              { label: "Items (lista)", name: "items", widget: "list" }
+            ]}

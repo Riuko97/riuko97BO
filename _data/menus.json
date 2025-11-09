@@ -1,0 +1,32 @@
+{
+  "diario": {
+    "titulo": "Menú Diario",
+    "disponibilidad": "Disponible de Lunes a Viernes (mediodía).",
+    "precio": "14.50€",
+    "items": [
+      "Dos primeros a elegir",
+      "Dos segundos a elegir",
+      "Pan, bebida y postre incluido"
+    ]
+  },
+  "finde": {
+    "titulo": "Menú Fin de Semana",
+    "disponibilidad": "Disponible Sábados y Domingos (mediodía).",
+    "precio": "25.00€",
+    "items": [
+      "Entrante especial a compartir",
+      "Plato principal (carne o pescado)",
+      "Postre de la casa y copa de vino"
+    ]
+  },
+  "grupos": {
+    "titulo": "Menús de Grupo",
+    "disponibilidad": "Opciones personalizadas para celebraciones.",
+    "precio": "A partir de 30.00€",
+    "items": [
+      "Mínimo 8 personas",
+      "Cierra tu menú con antelación",
+      "Incluye pica-pica y platos principales"
+    ]
+  }
+}
